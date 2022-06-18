@@ -1,0 +1,31 @@
+@mixin link {
+    font-family: 'Lato' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    &:hover {
+        color: $link_hover;
+    }
+}
+
+@mixin title {
+    font-family: 'Lato' , sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+@mixin sm_span {
+    font-size: 12px;
+    line-height: 14px;
+}
+
+@mixin aside_category_title {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 22px;
+    color: $blue;
+}
+

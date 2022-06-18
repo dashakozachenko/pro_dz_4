@@ -1,0 +1,45 @@
+@media (max-width:1024px) {
+  .main_search {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width:1400px) {
+  .aside_result {
+    flex-flow: column;
+  }
+}
+
+
+@media (max-width:1200px) {
+  .row {
+    justify-content: center;
+  }
+}
+
+@media (max-width:992px) {
+  .aside_result {
+    flex-flow: row;
+  }
+}
+
+@media (max-width:500px) {
+  .main{
+
+    &_btn_title {
+      padding: 14px 14px;
+    }
+
+    &_pages {
+      flex-flow: column;
+
+      &_count {
+        padding-top: 10px;
+      }
+
+      &_btn {
+        flex-flow: column;
+      }
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.header {
+
+  &_nav {
+
+    &_wrap {
+      background: $header_wrap_color;
+    }
+    &_top {
+      display: flex;
+      justify-content: space-between;
+      padding: 2px 0;
+    }
+    &_lang {
+      display: flex;
+    }
+  }
+
+  &_btn {
+    padding-left: 6.25px;
+  }
+
+  &_basic {
+    box-shadow: 0px 0px 12px rgba(72, 79, 78, 0.17);
+  }
+
+  &_user{
+    margin-right: 20px;
+  }
+}
+.navbar-light .navbar-nav .nav-link {
+  color: $link_color;
+  padding: 0;
+  font-size: 15px;
+  &:hover {
+    color: $link_hover;
+  }
+}
+.link {
+  @include link;
+  color: $link_color;
+}
+
+.navbar-brand {
+  margin-right: 50px;
+}
+
+.nav-item {
+  margin-left: 30px;
+}

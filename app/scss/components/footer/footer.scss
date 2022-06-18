@@ -1,0 +1,123 @@
+.footer {
+  &_main {
+    background: $bg_footer;
+
+    &_category{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+
+
+      &_item {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      &_ul {
+        @include aside_category_title;
+        color: $white;
+        list-style: none;
+        padding-left: 0;
+      }
+
+      &_li {
+        @include link;
+        color: $line;
+      }
+
+    }
+
+
+    &_wrap {
+      padding: 47px 0 22px ;
+    }
+
+    &_elem {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+      justify-content: start;
+    }
+
+    &_wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &_description {
+      @include link;
+      color: $line;
+      margin: 16px 0 20px 10px ;
+    }
+
+    &_information_form {
+      padding: 22px 0 8px;
+      position: relative;
+
+      &_lang {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 0.5px solid $aside;
+        border-radius: 39px;
+        padding: 13px 49px 13px 28px;
+      }
+
+      input {
+        background: none;
+        border: 0.5px solid $aside;
+        border-radius: 39px;
+        padding: 13px 49px 13px 28px;
+        &::placeholder {
+          color: $line;
+          @include title;
+        }
+
+      }
+
+      &_icon_search {
+        position: absolute;
+        right: 17px;
+        top: 35.5px;
+        z-index: 1;
+      }
+    }
+  }
+
+
+
+  &_social {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+  }
+
+  &_down {
+    background: black;
+    padding: 6px 0 4px;
+
+    &_copyright {
+      display: flex;
+
+      &_text {
+        margin-bottom: 0;
+        margin-right: 5px;
+        color: $line;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 700;
+      }
+    }
+
+    &_wrap {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+.form_link {
+  color: $white;
+  @include link;
+}
